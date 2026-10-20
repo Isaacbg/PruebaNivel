@@ -46,7 +46,7 @@
 
 ## 3. Dependencias que tenga el proyecto
 
-* **Compilador C++20:**
+* **C++20:**
 * **GCC 13.3+**.
 * **Linux**
 * **CMake:** **** ( .20 o superior).

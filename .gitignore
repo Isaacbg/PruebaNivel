@@ -1,0 +1,4 @@
+*.pdf
+.vscode
+build
+Notas.txt
