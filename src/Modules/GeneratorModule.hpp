@@ -26,7 +26,7 @@ class GeneratorModule : public IModule {
         bool isRunning = false;
 
         std::jthread workerThread;
-        std::mutex stateMutex;
+        std::mutex sleepMutex;
         std::condition_variable_any cvSleep;
 
         std::chrono::milliseconds generationInterval = std::chrono::milliseconds(100);

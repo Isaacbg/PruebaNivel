@@ -85,7 +85,7 @@ void GeneratorModule::threadCallback(std::stop_token stopToken){
             //rechazado por módulo inactivo
         }
 
-        std::unique_lock<std::mutex> lock(stateMutex);
+        std::unique_lock<std::mutex> lock(sleepMutex);
         cvSleep.wait_for(lock,stopToken,generationInterval, [] {return false;});
         
     }
