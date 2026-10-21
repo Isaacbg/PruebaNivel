@@ -1,7 +1,6 @@
 #pragma once
 
 #include <chrono>
-#include <mutex>
 #include <stop_token>
 #include <thread>
 #include <vector>
@@ -29,7 +28,6 @@ class LoggerModule : public IModule {
         bool isRunning = false;
 
         std::jthread workerThread;
-        std::mutex stateMutex;
 
         BufferQueue<TimeStampedArray> inputBuffer{100};
         std::vector<TimeStampedArray> history;

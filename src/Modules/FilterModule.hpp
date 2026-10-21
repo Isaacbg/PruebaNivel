@@ -1,7 +1,6 @@
 #pragma once
 
 #include <algorithm>
-#include <mutex>
 #include <stop_token>
 #include <thread>
 
@@ -26,7 +25,6 @@ class FilterModule : public IModule {
         bool isRunning = false;
 
         std::jthread workerThread;
-        std::mutex stateMutex;
 
         IModule* outTarget = nullptr;
 
