@@ -49,5 +49,5 @@
 * **C++20:**
 * **GCC 13.3+**.
 * **Linux**
-* **CMake:** **** ( .20 o superior).
+* **CMake:** ( 3.20 o superior).
 
